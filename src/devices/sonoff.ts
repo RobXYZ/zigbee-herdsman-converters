@@ -2384,15 +2384,17 @@ export const definitions: DefinitionWithExtend[] = [
             }),
             m.numeric<"customClusterEwelink", SonoffEwelink>({
                 name: "energy_yesterday",
+                label: "Energy Yesterday",
                 cluster: "customClusterEwelink",
                 attribute: "energyYesterday",
-                description: "Electricity consumption for the yesterday",
+                description: "Electricity consumption for yesterday",
                 unit: "kWh",
                 scale: 1000,
                 access: "STATE_GET",
             }),
             m.numeric<"customClusterEwelink", SonoffEwelink>({
                 name: "energy_today",
+                label: "Energy Today",
                 cluster: "customClusterEwelink",
                 attribute: "energyToday",
                 description: "Electricity consumption for the day",
@@ -2402,6 +2404,7 @@ export const definitions: DefinitionWithExtend[] = [
             }),
             m.numeric<"customClusterEwelink", SonoffEwelink>({
                 name: "energy_month",
+                label: "Energy Month",
                 cluster: "customClusterEwelink",
                 attribute: "energyMonth",
                 description: "Electricity consumption for the month",
